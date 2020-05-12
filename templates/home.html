@@ -1,0 +1,21 @@
+<!DOCYPE html>
+<html>
+<head>
+    <title>Spam SMS Detector Flask App</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Spam sms detector</h1>
+        </div>
+    </header>
+    <div class = "ml-container">
+        <form action = "{{ url_for('predict')}}" method = "POST">
+            <p>Enter Your message Here</p>
+            <textarea name = "comment" rows = "4" cols = "50"></textarea>
+            <br/>
+            <input type = "submit" class = "btn-info" value = "predict">
+        </form>
+    </div>
+</body>
+</html>

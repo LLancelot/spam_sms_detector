@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+    <header>
+        <div class = "container">
+            <h1> Spam sms detector</h1>
+        </div>
+    </header>
+    <h1>Results</h1>
+    <div class = "results">
+        {% if prediction == 'spam' %}
+        <h2 style = "color:red;">Spam</h2>
+        {% elif prediction == 'ham' %}
+        <h2 style = "color:blue;">Not a Spam</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
